@@ -20,14 +20,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@1,14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="homepage">
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <img src="src/logos/boselogo.svg" alt="logobose"
+            <a href="#homepage">
+              <img src="src/logos/boselogo.svg" alt="logobose"
             class="navigation__logo">
+            </a>
           </li>
           <li class="navigation__item">
             <img src="src/logos/phone.svg" alt="phone"
@@ -43,5 +47,59 @@
         The world shades. Your music shines.
       </h1>
     </header>
+    <main class="main">
+      <section class="section">
+        <h2 class="section__title">
+          Recommended
+        </h2>
+        <article class="article">
+          <img src="src/images/photos/firstspeaker.jpg" alt="portablespeaker"
+          class="article__photo">
+          <div class="article__title">
+            Bose portable Smart speaker
+          </div>
+
+          <div class="article__description">
+            Smart home
+          </div>
+
+          <div class="article__price">
+            $ 399.00
+          </div>
+        </article>
+
+        <article class="article">
+          <img src="src/images/photos/secondspeaker.jpg" alt="soundlink flexspeaker"
+          class="article__photo">
+          <div class="article__title">
+            SoundLink Flex Bluetooth speaker
+          </div>
+
+          <div class="article__description">
+            Portable bluetooth
+          </div>
+
+          <div class="article__price">
+            $ 149.00
+          </div>
+        </article>
+
+        <article class="article">
+          <img src="src/images/photos/thirdspeaker.jpg" alt="soundlink speaker II"
+          class="article__photo">
+          <div class="article__title">
+            SoundLink Flex Bluetooth speaker
+          </div>
+
+          <div class="article__description">
+            Portable bluetooth
+          </div>
+
+          <div class="article__price">
+            $ 149.00
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
