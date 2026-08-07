@@ -1,12 +1,17 @@
+@use './utils/mixins' as *;
+
 .gallery {
   padding: 0 20px;
   margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__photos {
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 40px;
   }
 
   &__title {
