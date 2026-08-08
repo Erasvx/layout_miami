@@ -1,0 +1,43 @@
+@use '../utils/mixins' as *;
+
+.article {
+  @include grid;
+
+  width: 100%;
+  margin-bottom: 40px;
+
+  &__photo {
+    grid-column: span 2;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    grid-column: span 2;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__description {
+    margin-bottom: 12px;
+    grid-column: span 2;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__price {
+    grid-column: span 2;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

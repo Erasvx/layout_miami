@@ -8,6 +8,6 @@
 @mixin grid() {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 130px);
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
 }
