@@ -1,17 +1,12 @@
 @use './utils/mixins' as *;
 
 .gallery {
+  display: grid;
   padding: 0 20px;
   margin-bottom: 96px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
   &__photos {
     margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
   }
 
   &__title {
@@ -32,26 +27,4 @@
     font-size: 16px;
     line-height: 140%;
   }
-
-  &__button {
-    width: 280px;
-    height: 56px;
-    border-radius: 40px;
-    background: #292929;
-    color: white;
-    font-family: Inter, sans-serif;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-
-    &:hover {
-      border: 3px solid #292929;
-      background-color: white;
-      color: #292929;
-      transition: color,background-color 0.15s ease-in-out;
-    }
-  }
-
 }
