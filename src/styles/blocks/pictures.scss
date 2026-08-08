@@ -3,33 +3,68 @@
 .pictures {
   @include grid;
 
-  &__item {
-    object-fit: cover;
-    width: 100%;
-    justify-self: center;
-    margin-bottom: 16px;
+  @include for-tablet {
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    padding: 0 72px;
+    column-gap: 24px;
   }
 
-  &__button {
-    height: 56px;
-    border-radius: 40px;
-    background: #292929;
-    color: white;
+  @include for-desktop {
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    padding: 0 120px;
+    column-gap: 24px;
+  }
+
+  &__item {
+    object-fit: cover; // 4,2 4,2 2,4
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    margin-bottom: 16px;
+
+    &--fixed {
+      object-position: 85% center;
+    }
+
+    @include for-tablet {
+      height: 184px;
+      &--big {
+        grid-column: span 4;
+      }
+
+      &--small {
+        grid-column: span 2;
+      }
+    }
+
+    @include for-desktop {
+      height: 324px;
+      &--big {
+        grid-column: span 8;
+      }
+
+      &--small {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  &__pharagraph {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
+
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-    width: 100%;
-
-    &:hover {
-      cursor: pointer;
-      border: 3px solid #292929;
-      background-color: white;
-      color: #292929;
-      transition:
-        color,
-        background-color 0.3s ease-in-out;
-    }
+    line-height: 140%;
   }
 }

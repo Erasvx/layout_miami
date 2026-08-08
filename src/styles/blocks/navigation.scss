@@ -1,4 +1,7 @@
+@use '../utils/mixins' as *;
+
 .navigation {
+  align-self: start;
   width: 100%;
 
   &__list {
@@ -27,5 +30,9 @@
   &__rightside {
     display: flex;
     gap: 24px;
+
+    @include for-tablet {
+      gap: 32px;
+    }
   }
 }

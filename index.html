@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="header" id="homepage">
-      <nav class="navigation">
+      <nav class="navigation header__navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
             <a href="#homepage">
@@ -35,11 +35,11 @@
           </li>
           <li class="navigation__item">
             <div class="navigation__rightside">
-              <a href="#">
+              <a href="#" class="navigation__link">
                 <img src="src/logos/phone.svg" alt="phone"
                 class="navigation__phone">
               </a>
-              <a href="#menu">
+              <a href="#menu" class="navigation__link">
                 <img src="src/logos/burger.svg" alt="burger"
                 class="navigation__burger">
               </a>
@@ -82,7 +82,7 @@
         <h2 class="products__title">
           Recommended
         </h2>
-        <article class="article">
+        <article class="article products__item">
           <img src="src/images/photos/firstspeaker.jpg" alt="portablespeaker"
           class="article__photo">
           <div class="article__title">
@@ -98,7 +98,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article products__item">
           <img src="src/images/photos/secondspeaker.jpg" alt="soundlink flexspeaker"
           class="article__photo">
           <div class="article__title">
@@ -114,7 +114,7 @@
           </div>
         </article>
 
-        <article class="article">
+        <article class="article products__item">
           <img src="src/images/photos/thirdspeaker.jpg" alt="soundlink speaker II"
           class="article__photo">
           <div class="article__title">
@@ -133,54 +133,63 @@
 
       <section class="gallery">
         <h2 class="gallery__title">
-            Browse Bose products by category
+          Browse Bose
+          <br>
+          products by category
         </h2>
 
         <article class="gallery__photos">
           <div class="pictures">
             <img src="src/images/photos/photo1.jpg" alt="photo1"
-            class="pictures__item">
+            class="pictures__item pictures__item--big">
             <img src="src/images/photos/photo2.jpg" alt="photo2"
-            class="pictures__item">
+            class="pictures__item pictures__item--small">
+
+            <p class="pictures__pharagraph">
+              Headphones & earbuds
+            </p>
           </div>
-          <p class="gallery__pharagraph">
-            Headphones & earbuds
-          </p>
         </article>
 
         <article class="gallery__photos">
           <div class="pictures">
             <img src="src/images/photos/photo3.jpg" alt="photo3"
-            class="pictures__item">
+            class="pictures__item pictures__item--big pictures__item--fixed">
             <img src="src/images/photos/photo4.jpg" alt="photo4"
-            class="pictures__item">
+            class="pictures__item pictures__item--small">
+            <p class="pictures__pharagraph">
+              Speakers
+            </p>
           </div>
-          <p class="gallery__pharagraph">
-            Speakers
-          </p>
         </article>
 
         <article class="gallery__photos">
           <div class="pictures">
             <img src="src/images/photos/photo5.jpg" alt="photo5"
-            class="pictures__item">
+            class="pictures__item pictures__item--small">
             <img src="src/images/photos/photo6.jpg" alt="photo6"
-            class="pictures__item">
+            class="pictures__item pictures__item--big pictures__item--fixed">
+
+            <p class="pictures__pharagraph">
+              Audio sunglasses
+            </p>
+
           </div>
-          <p class="gallery__pharagraph">
-            Audio sunglasses
-          </p>
         </article>
 
-        <a href="#" class="gallery__link">
-          <button class="pictures__button">
+        <a href="#">
+          <button class="gallery__button">
             View all
           </button>
         </a>
       </section>
 
       <section class="about">
-
+        <h2 class="about__title">
+          Why buy direct
+          <br>
+          from Bose
+        </h2>
       </section>
     </main>
   </body>

@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -5,14 +7,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 0 20px 40px;
   box-sizing: border-box;
   margin-bottom: 64px;
 
+  @include grid;
+
+  @include for-desktop {
+    padding: 0 120px 64px;
+  }
+
+  @include for-tablet {
+    padding: 0 72px 64px;
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    column-gap: 24px;
+  }
+
   &__title {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    align-self: end;
     font-family: Inter, sans-serif;
     font-weight: 800;
     font-style: Italic;
@@ -28,6 +47,17 @@
       width: 48px;
       padding-bottom: 16px;
       display: block;
+    }
+  }
+  &__navigation {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
     }
   }
 }
