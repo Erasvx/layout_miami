@@ -7,11 +7,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 0 20px 40px;
   box-sizing: border-box;
   margin-bottom: 64px;
 
   @include grid;
+
+  padding: 0 20px 40px;
 
   @include for-desktop {
     padding: 0 120px 64px;
