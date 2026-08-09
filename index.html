@@ -39,9 +39,8 @@
                 <img src="src/logos/phone.svg" alt="phone"
                 class="navigation__phone">
               </a>
-              <a href="#menu" class="navigation__link">
-                <img src="src/logos/burger.svg" alt="burger"
-                class="navigation__burger">
+              <a href="#menu" class="burger navigation__burger">
+                <span class="burger__label">Open menu</span>
               </a>
             </div>
           </li>
@@ -176,8 +175,8 @@
 
           </div>
         </article>
-        <a href="#" class="gallery__link">
-          <button class="gallery__button">
+        <a class="gallery__link">
+          <button class="button gallery__button">
             View all
           </button>
         </a>
@@ -219,18 +218,60 @@
           Contact us
         </div>
 
-        <form action="#" class="form">
+        <form action="#dsad" class="form contact__form">
+          <label for="name" class="form__label">Name</label>
           <input type="text" id="name"
           placeholder="Name"
-          class="form__item">
+          class="form__item" required>
+          <label for="email" class="form__label">Email</label>
           <input type="email" placeholder="Email"
           id="email"
-          class="form__item">
+          class="form__item" required>
+          <label for="message" class="form__label">Message</label>
           <textarea name="message" placeholder="Message"
           id="message"
-          class="form__textarea"></textarea>
+          class="form__textarea" required></textarea>
+          <button type="submit" class="button form__submit">
+            Send
+          </button>
+
         </form>
+
+        <div class="contact__data">
+          <div class="contact__data-type">
+            <p class="contact__data-title">
+              Phone
+            </p>
+            <p class="contact__data-info">
+              +1 234 5555-55-55
+            </p>
+          </div>
+          <div class="contact__data-type">
+            <p class="contact__data-title">
+              Email
+            </p>
+            <p class="contact__data-info">
+              hello@miami.com
+            </p>
+          </div>
+          <div class="contact__data-type">
+            <p class="contact__data-title">
+              Address
+            </p>
+            <p class="contact__data-info">
+              400 first ave.
+              <br>
+              suite 700
+              <br>
+              Minneapolis, MN 55401
+            </p>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+
+    </footer>
   </body>
 </html>

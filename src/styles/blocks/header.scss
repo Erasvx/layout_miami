@@ -6,22 +6,27 @@
   background-image: url(../images/photos/bigimage.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   box-sizing: border-box;
+  background-size: cover;
   margin-bottom: 64px;
 
-  @include grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
 
   padding: 0 20px 40px;
 
   @include for-desktop {
     padding: 0 120px 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
   }
 
   @include for-tablet {
     padding: 0 72px 64px;
     display: grid;
-    grid-template-columns: repeat(6, 80px);
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 24px;
   }
 
@@ -30,6 +35,10 @@
 
     @include for-tablet {
       grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: 1 / 6;
     }
 
     align-self: end;
@@ -50,6 +59,7 @@
       display: block;
     }
   }
+
   &__navigation {
     grid-column: span 2;
 

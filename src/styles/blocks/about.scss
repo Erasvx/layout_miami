@@ -1,6 +1,8 @@
 @use '../utils/mixins' as *;
 
 .about {
+  justify-content: center;
+
   @include grid;
 
   @include for-tablet {

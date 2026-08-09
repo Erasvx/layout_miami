@@ -1,33 +1,26 @@
 @use '../utils/mixins' as *;
 
 .navigation {
-  align-self: start;
   width: 100%;
+  padding-top: 24px;
+  align-self: start;
 
   &__list {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
   &__logo {
-    padding-top: 28px;
     height: 16px;
   }
 
   &__phone {
-    padding-top: 24px;
-    height: 24px;
-    width: 24px;
-  }
-
-  &__burger {
-    padding-top: 24px;
     height: 24px;
     width: 24px;
   }
 
   &__rightside {
+    transform: translateY(-10%);
     display: flex;
     gap: 24px;
 

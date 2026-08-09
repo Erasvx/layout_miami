@@ -1,6 +1,8 @@
 @use '../utils/mixins' as *;
 
 .pictures {
+  justify-content: center;
+
   @include grid;
 
   @include for-tablet {
@@ -22,6 +24,12 @@
     width: 100%;
     height: 100%;
     justify-self: center;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(110%);
+      transition: transform 0.2s ease-in-out;
+    }
 
     &--fixed {
       object-position: 85% center;
