@@ -8,7 +8,7 @@ window.addEventListener('hashchange', () => {
   }
 });
 
-document.querySelector('.form').addEventListener('submit', (e) => {
+document.querySelector('.contact__form').addEventListener('submit', (e) => {
   e.preventDefault();
 
   // const name = document.getElementById('name').value;
