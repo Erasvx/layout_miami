@@ -9,12 +9,14 @@
     grid-template-columns: repeat(6, 80px);
     column-gap: 24px;
     padding: 0 20px;
+    margin-bottom: 120px;
   }
 
   @include for-desktop {
     grid-template-columns: repeat(12, 63px);
     column-gap: 24px;
     padding: 0 120px;
+    margin-bottom: 118px;
   }
   &__title {
     grid-column: span 2;
@@ -24,7 +26,7 @@
     }
 
     @include for-desktop {
-      grid-column: span 12;
+      grid-column: 4 / 9;
     }
 
     font-family: Inter, sans-serif;
@@ -57,7 +59,7 @@
     }
 
     @include for-desktop {
-      grid-column: 8 / -3;
+      grid-column: 7 / -3;
     }
 
     &-type {
@@ -81,6 +83,12 @@
       font-size: 16px;
       line-height: 140%;
       color: #3e3e3e;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #292929;
+        text-decoration: underline;
+      }
     }
   }
 }
