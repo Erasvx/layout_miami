@@ -22,7 +22,6 @@
     width: 100%;
     height: 100%;
     justify-self: center;
-    margin-bottom: 16px;
 
     &--fixed {
       object-position: 85% center;
@@ -52,6 +51,7 @@
   }
 
   &__pharagraph {
+    margin-top: 16px;
     grid-column: span 2;
 
     @include for-tablet {
