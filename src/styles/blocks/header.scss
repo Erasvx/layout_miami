@@ -9,19 +9,13 @@
   box-sizing: border-box;
   background-size: cover;
   margin-bottom: 64px;
+  justify-content: center;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
 
   padding: 0 20px 40px;
-
-  @include for-desktop {
-    padding: 0 120px 64px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
-  }
 
   @include for-tablet {
     padding: 0 72px 64px;
@@ -30,22 +24,18 @@
     column-gap: 24px;
   }
 
+  @include for-desktop {
+    padding: 0 120px 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 63px);
+    column-gap: 24px;
+  }
+
   &__title {
-    grid-column: span 2;
-
-    @include for-tablet {
-      grid-column: span 6;
-    }
-
-    @include for-desktop {
-      grid-column: 1 / 6;
-    }
-
     align-self: end;
     font-family: Inter, sans-serif;
     font-weight: 800;
     font-style: Italic;
-    font-size: 32px;
     line-height: 100%;
     letter-spacing: -1.5px;
     vertical-align: middle;
@@ -57,6 +47,16 @@
       width: 48px;
       padding-bottom: 16px;
       display: block;
+    }
+
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: 1 / 6;
     }
   }
 

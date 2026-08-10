@@ -26,13 +26,12 @@
     }
 
     @include for-desktop {
-      grid-column: 4 / 9;
+      grid-column: 5 / 9;
     }
 
     font-family: Inter, sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.5px;
     text-align: center;
@@ -59,7 +58,7 @@
     }
 
     @include for-desktop {
-      grid-column: 7 / -3;
+      grid-column: 8 / -1;
     }
 
     &-type {
